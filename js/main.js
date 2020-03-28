@@ -1,4 +1,34 @@
 
+
+// const playbutton = document.querySelectorAll('.play-stop-btn');
+// var video = [
+  
+//   document.querySelector('#video-one'),
+//   document.querySelector('#video-two')
+
+// ];
+
+// function PlayPause() {
+//   for(var i = 0; i < video.length; i++){
+  
+    
+//   if(video[i].paused == true) {
+//     video[i].play();
+//     video[i].playbackRate = 1;
+//     playbutton[i].style.backgroundImage = "url('images/play.svg')";
+//   } else{
+//     video[i].pause();
+//     playbutton[i].style.backgroundImage = "url('images/pause.svg')";
+
+//   }
+// }
+
+// }
+
+// playbutton.forEach(btn => btn.addEventListener('click', PlayPause)); 
+
+
+
 // video one
 
 const playbutton = document.querySelector('.play-stop-btn');
