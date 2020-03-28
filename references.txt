@@ -1,0 +1,9 @@
+1. https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility
+2. https://developer.mozilla.org/en-US/docs/Learn/Accessibility
+3. https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML
+4. https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia
+5. https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/    Adding_captions_and_subtitles_to_HTML5_video
+6. https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API
+7. https://developer.mozilla.org/en-US/docs/Web/API/Window/fullScreen
+
+

@@ -1,0 +1,485 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+.movie {
+  background: url(../images/main_video.jpg) center no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+
+.tv_audio {
+  background: url(../images/bg-2.jpg) center no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.audio-wrp {
+  background: url(../images/phone.png) center no-repeat;
+  width: 300px;
+  height: 550px;
+  margin: 0 auto; }
+
+h2 {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 35px;
+  font-size: 20px; }
+
+.video-wrp {
+  margin-top: 100px;
+  background: url(../images/mockup_mobile.png) center no-repeat;
+  width: 100%;
+  height: 215px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .video-wrp video {
+    width: 290px;
+    height: 210px;
+    align-content: center; }
+
+.controls-audio .text {
+  margin-top: 15px;
+  margin-left: 97px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 35px;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  font-family: 'Special Elite', cursive; }
+
+.controls-audio .play-stop-btn-audio {
+  background: url(../images/play.svg);
+  width: 35px;
+  height: 35px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer; }
+
+.controls-audio .rwd-btn-audio {
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top: 35px;
+  background: url(../images/fast-forward.svg) no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border: none;
+  width: 23px;
+  height: 23px; }
+
+.controls-audio .fwd-btn-audio {
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 35px;
+  background: url(../images/fast-forward.svg) no-repeat;
+  border: none;
+  width: 23px;
+  height: 23px; }
+
+.controls-audio .audio-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.controls-audio .time-atr-audio {
+  margin-top: 20px;
+  margin-left: 113px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Special Elite', cursive; }
+
+.controls-audio .audiobar {
+  margin-top: 270px;
+  margin-left: 50px;
+  width: 200px;
+  background: grey; }
+
+.controls-audio input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -2px; }
+
+.controls-audio input[type=range]::-moz-range-thumb {
+  height: 20px;
+  width: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer; }
+
+.controls-audio input[type=range]::-webkit-slider-runnable-track {
+  height: 10px;
+  cursor: pointer;
+  background: grey;
+  border-radius: 1.3px; }
+
+.controls-audio input[type=range]:focus::-webkit-slider-runnable-track {
+  background: grey; }
+
+.controls-audio input[type=range]::-moz-range-track {
+  height: 5px;
+  cursor: pointer;
+  background: grey; }
+
+.text-subt {
+  display: none;
+  position: absolute;
+  background: white;
+  font-family: 'Special Elite', cursive;
+  width: 200px;
+  height: 425px;
+  overflow: scroll;
+  margin-top: -390px;
+  margin-left: 46px;
+  border-radius: 10px;
+  padding: 5px; }
+
+.text-subt .close-text {
+  margin-left: 165px;
+  font-family: 'Special Elite', cursive;
+  margin-bottom: 5px; }
+
+.basic-controls {
+  background: #101412;
+  height: 40px;
+  margin: -55px auto 0 40px;
+  width: 290px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  position: absolute;
+  opacity: 0; }
+  .basic-controls .play-stop-btn {
+    background: url(../images/play.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin-top: 13px;
+    cursor: pointer;
+    margin-right: -65px; }
+  .basic-controls .rwd-btn {
+    cursor: pointer;
+    margin-right: -60px;
+    margin-top: 15px;
+    background: url(../images/fast-forward.svg) no-repeat;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    border: none;
+    width: 18px;
+    height: 18px; }
+  .basic-controls .fwd-btn {
+    cursor: pointer;
+    margin-right: -60px;
+    margin-top: 15px;
+    background: url(../images/fast-forward.svg) no-repeat;
+    border: none;
+    width: 18px;
+    height: 18px; }
+  .basic-controls .time-atr {
+    margin-top: 20px;
+    font-size: 12px;
+    margin-right: -60px; }
+  .basic-controls .volume-btn {
+    cursor: pointer;
+    margin-top: 15px;
+    background: url(../images/volume.svg) no-repeat;
+    border: none;
+    width: 18px;
+    height: 18px;
+    margin-left: -50px; }
+  .basic-controls .volume {
+    margin-top: 0px;
+    width: 50px; }
+  .basic-controls .subtitles {
+    margin-top: 12px;
+    background: url(../images/subtitles.svg) no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-right: -60px; }
+  .basic-controls .fsbtn {
+    cursor: pointer;
+    margin-right: -60px;
+    margin-top: 15px;
+    background: url(../images/expand.svg) no-repeat;
+    border: none;
+    width: 18px;
+    height: 18px; }
+
+.button-down {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px; }
+  .button-down button {
+    background: url(../images/down-arrow.svg);
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    width: 60px; }
+
+.basic-controls:hover {
+  opacity: 0.8; }
+
+.video-wrp-two {
+  background: url(../images/ipad-mockup_mobile.png) center no-repeat;
+  width: 300px;
+  height: 230px;
+  margin: 30px auto 0 auto; }
+  .video-wrp-two video {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 280px;
+    height: 210px;
+    align-content: center; }
+
+.basic-controls-two {
+  background: #101412;
+  height: 40px;
+  margin: -48px auto 0 42px;
+  width: 290px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  position: absolute;
+  opacity: 0; }
+  .basic-controls-two .play-stop-btn-two {
+    background: url(../images/play.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin-top: 13px;
+    cursor: pointer;
+    margin-right: -65px; }
+  .basic-controls-two .rwd-btn-two {
+    cursor: pointer;
+    margin-right: -60px;
+    margin-top: 15px;
+    background: url(../images/fast-forward.svg) no-repeat;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    border: none;
+    width: 18px;
+    height: 18px; }
+  .basic-controls-two .fwd-btn-two {
+    cursor: pointer;
+    margin-right: -60px;
+    margin-top: 15px;
+    background: url(../images/fast-forward.svg) no-repeat;
+    border: none;
+    width: 18px;
+    height: 18px; }
+  .basic-controls-two .time-atr-two {
+    margin-top: 20px;
+    font-size: 12px;
+    margin-right: -60px; }
+  .basic-controls-two .volume-btn-two {
+    cursor: pointer;
+    margin-top: 15px;
+    background: url(../images/volume.svg) no-repeat;
+    border: none;
+    width: 18px;
+    height: 18px;
+    margin-left: -50px; }
+  .basic-controls-two .volume-two {
+    margin-top: 0px;
+    width: 50px; }
+  .basic-controls-two .subtitles-two {
+    margin-top: 12px;
+    background: url(../images/subtitles.svg) no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-right: -60px; }
+  .basic-controls-two .fsbtn-two {
+    cursor: pointer;
+    margin-right: -60px;
+    margin-top: 15px;
+    background: url(../images/expand.svg) no-repeat;
+    border: none;
+    width: 18px;
+    height: 18px; }
+
+.basic-controls-two:hover {
+  opacity: 0.8; }
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 35px;
+    margin-bottom: 30px; }
+  .video-wrp {
+    margin-top: 0px;
+    background: url(../images/mockup.png) center no-repeat;
+    width: 100%;
+    height: 570px; }
+    .video-wrp video {
+      width: 710px;
+      height: 580px; }
+  .basic-controls {
+    position: relative;
+    height: 50px;
+    margin: -110px auto 0 auto;
+    width: 730px;
+    opacity: 0; }
+    .basic-controls .play-stop-btn {
+      width: 35px;
+      height: 35px;
+      margin-top: 10px; }
+    .basic-controls .rwd-btn {
+      margin-left: 100px;
+      margin-top: 15px;
+      width: 23px;
+      height: 23px; }
+    .basic-controls .fwd-btn {
+      margin-top: 15px;
+      width: 23px;
+      height: 23px; }
+    .basic-controls .time-atr {
+      margin-top: 19px;
+      font-size: 20px; }
+    .basic-controls .volume-btn {
+      margin-top: 15px;
+      width: 23px;
+      height: 23px; }
+    .basic-controls .volume {
+      width: 120px;
+      margin-left: 20px;
+      margin-top: 3px; }
+    .basic-controls .subtitles {
+      margin-top: 7px;
+      width: 40px;
+      height: 40px; }
+    .basic-controls .fsbtn {
+      margin-top: 17px;
+      width: 23px;
+      height: 23px; }
+  .button-down {
+    margin-top: 150px;
+    cursor: pointer; }
+    .button-down button {
+      height: 80px;
+      width: 80px; }
+  .video-wrp-two {
+    background: url(../images/ipad-mockup.png) center no-repeat;
+    width: 750px;
+    height: 570px; }
+    .video-wrp-two video {
+      padding-left: 75px;
+      padding-top: 45px;
+      width: 600px;
+      height: 480px; }
+  .basic-controls-two {
+    height: 50px;
+    margin: -110px auto 0 65px;
+    width: 640px; }
+    .basic-controls-two .play-stop-btn-two {
+      width: 35px;
+      height: 35px;
+      margin-top: 10px; }
+    .basic-controls-two .rwd-btn-two {
+      margin-left: 100px;
+      margin-top: 15px;
+      width: 23px;
+      height: 23px; }
+    .basic-controls-two .fwd-btn-two {
+      margin-top: 15px;
+      width: 23px;
+      height: 23px; }
+    .basic-controls-two .time-atr-two {
+      margin-top: 19px;
+      font-size: 20px; }
+    .basic-controls-two .volume-btn-two {
+      margin-top: 15px;
+      width: 23px;
+      height: 23px; }
+    .basic-controls-two .volume-two {
+      width: 120px;
+      margin-left: 20px; }
+    .basic-controls-two .subtitles-two {
+      margin-top: 7px;
+      width: 40px;
+      height: 40px; }
+    .basic-controls-two .fsbtn-two {
+      margin-top: 17px;
+      width: 23px;
+      height: 23px; } }
+
+@media screen and (min-width: 1200px) {
+  .video-wrp-two {
+    width: 1000px; }
+    .video-wrp-two video {
+      padding-left: 200px; }
+  .basic-controls-two {
+    margin: -110px auto 0 180px; }
+  .movie h2 {
+    padding-top: 80px;
+    padding-bottom: 40px; }
+  .tv_audio {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .tv h2 {
+    margin-top: 70px; }
+  .audio {
+    width: 700px;
+    height: 100vh;
+    border-left: 2px dashed black; }
+    .audio h2 {
+      margin-top: 63px;
+      margin-bottom: 45px; } }

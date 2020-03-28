@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <title>A/V Accessibility Research Project</title>
+</head>
+<body>
+    <main>
+    <section class="main-section">
+    <div class="movie">
+            <h2>Movie: "Home Alone"</h2>
+            <div class="video-wrp">
+            <video id="video-one">
+                    <source src="includes/Home_Alone_1990.mp4" type="video/mp4">
+                    <!-- subtitles works only if run it on server-->
+                   <track class="subtitlesText" kind="subtitles" src="includes/home_alone.vtt" srclang="en" default>
+            </video>
+            </div>
+            <div class="basic-controls">
+                    <button class="volume-btn">
+                        <input class="volume" type="range" min="0" max="100">
+                    </button>
+                    <button class="rwd-btn"></button>
+                    <button class="play-stop-btn"></button>
+                    <button class="fwd-btn"></button>
+                    <div class="time-atr">00:00</div>
+                    <button class="subtitles" data-state="subtitles"></button>
+                    <button class="fsbtn"></button>
+            </div>
+            <div class="button-down">
+            <button></button>
+            </div>
+    </div>
+    <div class="tv_audio">
+        <div class="tv">
+                <h2>TV Show: "The Flintstones"</h2>
+                <div class="video-wrp-two">
+                    <video id="video-two">
+                        <source src="includes/Tv_The_Flintstones_(1960).mp4" type="video/mp4">
+                            <!-- subtitles works only if run it live-->
+                        <track class="subtitlesText" kind="subtitles" src="includes/flintstones.vtt" srclang="en" default> 
+                    </video>    
+                </div>
+                <div class="basic-controls-two">
+                        <button class="volume-btn-two">
+                            <input class="volume-two" type="range" min="0" max="100">
+                        </button>
+                        <button class="rwd-btn-two"></button>
+                        <button class="play-stop-btn-two"></button>
+                        <button class="fwd-btn-two"></button>
+                        <div class="time-atr-two">00:00</div>
+                        <button class="subtitles-two" data-state="subtitles"></button>
+                        <button class="fsbtn-two"></button>
+                </div>
+
+        </div>
+        <div class="audio">
+                <h2>Music: "The Beatles - Hey Jude"</h2>
+            <div class="audio-wrp">
+                    <audio><source src="includes/Hey_Jude.mp3" type="audio/mp3"></audio>
+                    <div class="controls-audio">
+                            <input class="audiobar" type="range" min="0" max="100">
+                            <div class='audio-btn'>
+                            <button class="rwd-btn-audio"></button>
+                            <button class="play-stop-btn-audio"></button>
+                            <button class="fwd-btn-audio"></button>
+                            </div>
+                            <div class="time-atr-audio">00:00</div>
+                            <button class="text">Text</button>
+         
+                    </div>
+                    <div class="text-subt">
+                        <button class="close-text">x</button>
+                        <p>Hey Jude, don't make it bad</p>
+                        <p>Take a sad song and make it better</p>
+                        <p>Remember to let her into your heart</p>
+                        <p>Then you can start to make it better</p>
+                        <p>Hey Jude, don't be afraid</p>
+                        <p>You were made to go out and get her</p>
+                        <p>The minute you let her under your skin</p>
+                        <p>Then you begin to make it better</p>
+                        <p>And anytime you feel the pain</p>
+                        <p>Hey Jude, refrain</p>
+                        <p>Don't carry the world upon your shoulders</p>
+                        <p>For well you know that it's a fool</p>
+                        <p>Who plays it cool</p>
+                        <p>By making his world a little colder</p>
+                        <p>Na-na-na, na, na</p>
+                        <p>Na-na-na, na</p>
+                        <p>Hey Jude, don't let me down</p>
+                        <p>You have found her, now go and get her (let it out and let it in)</p>
+                        <p>Remember to let her into your heart (hey Jude)</p>
+                        <p>Then you can start to make it better</p>
+                        <p>So let it out and let it in</p>
+                        <p>Hey Jude, begin</p>
+                        <p>You're waiting for someone to perform with</p>
+                        <p>And don't you know that it's just you</p>
+                        <p>Hey Jude, you'll do</p>
+                        <p>The movement you need is on your shoulder</p>
+                        <p>Na-na-na, na, na</p>
+                        <p>Na-na-na, na, yeah</p>
+                        <p>Hey Jude, don't make it bad</p>
+                        <p>Take a sad song and make it better</p>
+                        <p>Remember to let her under your skin</p>
+                        <p>Then you'll begin to make it better</p>
+                        <p>Better better better better better, ah!</p>
+                        <p>Na, na, na, na-na-na na (yeah! Yeah, yeah, yeah, yeah, yeah, yeah)</p>
+                        <p>Na-na-na na, hey Jude</p>
+                        <p>Na, na, na, na-na-na na</p>
+                        <p>Na-na-na na, hey Jude</p>
+                        <p>Na, na, na, na-na-na na</p>
+                        <p>Na-na-na na, hey Jude</p>
+                        <p>Na, na, na, na-na-na na</p>
+                        <p>Na-na-na na, hey Jude (Jude Jude, Judy Judy Judy Judy, ow wow!)</p>
+                        <p>Na, na, na, na-na-na na (my, my, my)</p>
+                        <p>Na-na-na na, hey Jude (Jude, Jude, Jude, Jude, Jude)</p>
+                        <p>Na, na, na, na-na-na na (yeah, yeah, yeah)</p>
+                        <p>Na-na-na na, hey Jude (yeah, you know you can make it, Jude, Jude, you're</p>
+                        <p>not gonna break it)
+                        <p>Na, na, na, na-na-na na (don't make it bad, Jude, take a sad song and make it better)</p>
+                        <p>Na-na-na na, hey Jude (oh Jude, Jude, hey Jude, wa!)</p>
+                        <p>Na, na, na, na-na-na na (oh Jude)</p>
+                        <p>Na-na-na na, hey Jude (hey, hey, hey, hey)</p>
+                        <p>Na, na, na, na-na-na na (hey, hey)</p>
+                        <p>Na-na-na na, hey Jude (now, Jude, Jude, Jude, Jude, Jude)</p>
+                        <p>Na, na, na, na-na-na na (Jude, yeah, yeah, yeah, yeah)</p>
+                        <p>Na-na-na na, hey Jude</p>
+                        <p>Na, na, na, na-na-na na</p>
+                        <p>Na-na-na na, hey Jude (na-na-na-na-na-na-na-na-na)</p>
+                        <p>Na, na, na, na-na-na na</p>
+                        <p>Na-na-na na, hey Jude</p>
+                        <p>Na, na, na, na-na-na na</p>
+                        <p>Na-na-na na, hey Jude</p>
+                        <p>Na, na, na, na-na-na na (yeah, make it, Jude)</p>
+                        <p>Na-na-na na, hey Jude (yeah yeah yeah yeah yeah! Yeah! Yeah! Yeah! Yeah!)</p>
+                        <p>Na, na, na, na-na-na na (yeah, yeah yeah, yeah! Yeah! Yeah!)</p>
+                        <p>Na-na-na na, hey Jude</p>
+                        <p>Na, na, na, na-na-na na</p>
+                        <p>Na-na-na na, hey Jude</p>
+                        <p>Na, na, na, na-na-na na</p>
+                        <p>Na-na-na na, hey Jude</p>
+                        <p>Na, na, na, na-na-na na</p>
+                        <p>Na-na-na na, hey Jude</p>
+                    </div>
+            </div>
+           
+            </div>
+        
+    </div>
+    </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
